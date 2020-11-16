@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import './notification.css';
 import Status from './statusicons/status';
 import {theme_color_panels,notify_status} from '../../globalvariables';
-import { FaExpand,FaBell, FaGithub, FaLinkedin, FaEnvelope, FaAt, FaStar } from 'react-icons/fa';
+import { FaExpand,FaBell, FaGithub, FaLinkedin, FaEnvelope, FaAt, FaStar, FaUserSecret } from 'react-icons/fa';
 
 export default class Panel extends Component
 {
@@ -33,6 +33,9 @@ export default class Panel extends Component
     repo = () => {
         window.open("https://github.com/RAJAGOPALAN-GANGADHARAN/JS-OS", "_blank");
     }
+    static = () => {
+        window.open("https://rajagopalan-portfolio.herokuapp.com/", "_blank");
+    }
     render()
     {
         return(
@@ -42,7 +45,8 @@ export default class Panel extends Component
                 <Status icon={<FaGithub />} event={this.gitHubIcon} />
                 <Status icon={<FaLinkedin />} event={this.linkedin} />
                 <Status icon={<FaAt />} event={this.mailto} />
-                <Status icon={<FaStar/>} event={this.repo}/>
+                <Status icon={<FaStar />} event={this.repo} />
+                <Status icon={<FaUserSecret />} event={this.static} />
             </div>
         )
     }

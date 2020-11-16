@@ -83,6 +83,18 @@ var desktopContents = [{
             appData: readme,
             app:"Markdown"
         }
+    },
+    {
+        name: "static_\nportfolio", ext: ".md", content: {
+            icon:"markdown.png",
+            appData: `
+Hope you enjoyed the OS styled portfolio, if you are on a small device or would like to minus all the fancy items
+please ** [Click Here](https://rajagopalan-portfolio.herokuapp.com/) **
+for a static version of the portfolio.
+Thank you
+            `,
+            app:"Markdown"
+        }
     }
 ]
 
